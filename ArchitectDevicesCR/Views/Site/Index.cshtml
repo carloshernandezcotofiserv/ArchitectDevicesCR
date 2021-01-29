@@ -1,0 +1,23 @@
+﻿@model ArchitectDevicesCR.Models.Site.SiteIndexModel
+@{
+    ViewBag.Title = "Site Index";
+}
+
+<h3>@ViewBag.Title</h3>
+<div id="siteIndex">
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp customTable" id="siteIndexTable"
+           <thead>
+               <tr>
+                   <th>Site Name</th>
+               </tr>
+           </thead>
+    <tbody>
+        @foreach (var site in Model.Sites)
+        { 
+        <tr>
+            <td class="strongTd"><a asp-controller="Site" asp-action="Detail" asp-route-id="@site.Id">@site.Name</a></td>
+        </tr>
+        }
+    </tbody>
+    </table>
+</div>

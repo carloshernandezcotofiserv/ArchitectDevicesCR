@@ -1,0 +1,11 @@
+Add Serial number.
+Add accesories for the device.
+Add passwords specific for unlocking the device.
+Add OS version.
+Change Card ID for Username on device details.
+Add a report exportable to excel.
+Add device addition capability on the UI.
+Analyze if a new status is required for somebody who has not checked out the device but wants it next.
+Disclosure for users when first using the app.
+Add a "broken/lost/decomissioned" status for knwowing when a device is not available for usage.
+Think about asking employees to tell us which devices they have and maybe ask them to take a picture for the records.

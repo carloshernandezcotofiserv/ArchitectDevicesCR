@@ -1,0 +1,31 @@
+﻿@model ArchitectDevicesCR.Models.User.UserIndexModel
+@{
+    ViewBag.Title = "User Index";
+}
+
+<h3>@ViewBag.Title</h3>
+<div id="patronIndex">
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2p customTable" id="patronIndexTable">
+        <thead>
+            <tr>
+                <th>Profile Link</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Id</th>
+                <th>Site</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in @Model.Users)
+            {
+            <tr>
+                <td><a asp-controller="User" asp-action="Detail" asp-route-id="@user.Id">(Profile)</a></td>
+                <td>@user.LastName</td>
+                <td>@user.FirstName</td>
+                <td>@user.Id</td>
+                <td>@user.HomeSite</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
